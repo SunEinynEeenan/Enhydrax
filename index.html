@@ -11,12 +11,20 @@
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
   <!--  <link href="/style.css" rel="stylesheet" type="text/css" media="all"> -->
+    
+    
 <style type="text/css">
+  
 body {
 background-color: purple;
 /*  background-image: url("orcanight.jpg"); */
 color: yellow;
 font-family: Lucida;
+  
+  -moz-transform: scale(0.9, 0.9); /* Moz-browsers */
+  zoom: 0.9; /* Other non-webkit browsers */
+  zoom: 90%; /* Webkit browsers */  
+  
 }
   
   </head>

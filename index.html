@@ -48,8 +48,35 @@ div.two {
 
 }
 
-span:active + div { display: block;}
+span:active + div.two { display: block;}
 /* to test just change :active to :hover and then atom will display the div when u hover over the button */
+
+div.three {
+  background-color: #cccccc;
+  color:black;
+  padding: 0px;
+  display: none;
+  border: 10px ridge Turquoise;  /* or BlueVoilet */
+
+
+}
+
+
+
+span:hover + div.three { display: block;}
+
+/* music button */
+button.a {
+  border:8px double turquoise;
+}
+
+/* resume button */
+button.b{
+  border:4px dotted violet;
+
+}
+
+
 
 #container {
 width: 100%;
@@ -113,9 +140,7 @@ white-space: nowrap;
 -->
 
 <b style="float:left"></b>
-<!--Resume-->
-<a  href="Resume September 2019 website.pdf" target="_blank"> <img src="ResumeButton.png"; width="120"; height="60";
-  border= "4px"; border-color= red; padding= 40px style="float:left"> </a>
+
 
   <img src="midiCL.gif" width="60" height="auto"  >
 
@@ -144,7 +169,7 @@ white-space: nowrap;
 
   <img src="Piano_and_rose.gif">
 
-  <a href="https://suneinyneeenan.github.io/Music/" target="_blank"> <img src="Music_2.gif" width="220" height=120 border=2> </a>
+  <a href="https://suneinyneeenan.github.io/Music/" target="_blank"> <img src="Music_2.gif" width="220" height=120 border=2px > </a>
 
   <img src="Piano_and_rose.gif">
   <img src="midiCL.gif">
@@ -166,12 +191,29 @@ white-space: nowrap;
   <img src="Music001.gif" >
 
 
-</div>
+
 
 
     <ul align ="center">
       <li> <strong> "Music is but a word" - Elie Mcafee-Hahn </strong> </li>
       <li>I've found a Grove</li>
+
+<div>
+
+<>
+<a href="https://suneinyneeenan.github.io/Music/" target="_blank"> <button class="a" type="button" style="background-color:" border> <span>Music</span>
+</button>  </a>
+
+<>
+
+<br>
+
+<>
+
+<!--Resume-->
+<a  href="Resume September 2019 website.pdf" target="_blank"> <button class="b" type="button" > <span>Résumé</span>
+</button> </a>
+
 
 
 <>
@@ -183,7 +225,7 @@ white-space: nowrap;
     <!-- BUTTON SYNTAX -->
 <button type="button"> <span>Bio</span>
     <div class="two">
-      I'm a writer/recordist/producer/sound_designer/instrumentalist from Newton, Massachusetts. I have a degree in Technology in Music and Related Arts (TIMARA) from the Oberlin Conservatory in Ohio.
+      I'm a writer/recordist/producer/sound_designer/instrumentalist/visual_artist from Newton, Massachusetts. I have a degree in Technology in Music and Related Arts (TIMARA) from the Oberlin Conservatory in Ohio.
 <br>
 <br>
 
@@ -235,7 +277,7 @@ white-space: nowrap;
 
 
 <button type="button" onclick="window.location.href = 'youtube.com';" > <span> The People's Coalition of Tandy</span>
-<div class="two">Email me if you'd like info!</div> </button>
+<div class="three">Email me if you'd like info!</div> </button>
 
 <>
 
@@ -259,7 +301,6 @@ white-space: nowrap;
 
 
 </div>
-
 
 
 
